@@ -17,5 +17,12 @@ dependencyResolutionManagement {
 rootProject.name = "jeminai"
 
 include(":core:testing")
+include(":core:data")
+include(":core:datastore")
+include(":core:datastore-proto")
+include(":core:datastore-test")
+include(":core:model")
+
 include(":feature:settings")
+
 include(":app")

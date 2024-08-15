@@ -17,6 +17,8 @@ dependencies {
     implementation(libs.androidx.datastore.core.android)
     implementation(libs.core)
 
+    implementation(project(":core:data"))
+
     testImplementation(libs.kotlinx.coroutines.test)
     testImplementation(libs.robolectric)
     androidTestImplementation(libs.bundles.androidx.compose.ui.test)
