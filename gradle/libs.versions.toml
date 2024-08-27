@@ -25,6 +25,7 @@ kotlinxSerializationJson = "1.6.3"
 androidxDataStore = "1.1.1"
 protobuf = "4.26.1"
 protobufPlugin = "0.9.4"
+androidxEspresso = "3.6.1"
 
 [bundles]
 androidx-compose-ui-test = ["androidx-ui-test-manifest", "androidx-ui-test-junit4"]
@@ -41,6 +42,7 @@ androidx-dataStore = { group = "androidx.datastore", name = "datastore", version
 
 # Test libraries
 androidx-test-rules = { group = "androidx.test", name = "rules", version.ref = "androidxTestRules" }
+androidx-test-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidxEspresso" }
 
 # Relates to Compose BOM below
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }

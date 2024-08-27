@@ -1,7 +1,6 @@
 plugins {
     alias(libs.plugins.project.android.library)
     alias(libs.plugins.project.hilt)
-//    id("kotlinx-serialization")
 }
 
 android {
@@ -15,10 +14,14 @@ android {
 }
 
 dependencies {
-    implementation(project(":core:datastore"))
+    api(projects.core.datastore)
 
     testImplementation(libs.kotlinx.coroutines.test)
     testImplementation(libs.kotlinx.serialization.json)
-    testImplementation(project(":core:testing"))
-//    testImplementation(project(":core:datastoreTest"))
+    testImplementation(projects.core.testing)
+    testImplementation(libs.hilt.android.testing)
+    testImplementation(projects.core.dispatchers)
+    testImplementation(libs.robolectric)
+
+    testImplementation(projects.core.datastore)
 }
