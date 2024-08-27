@@ -31,8 +31,8 @@ android {
 }
 
 dependencies {
-    implementation(project(":feature:settings"))
-    implementation(project(":core:testing"))
+    implementation(projects.feature.settings)
+    implementation(projects.core.testing)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
