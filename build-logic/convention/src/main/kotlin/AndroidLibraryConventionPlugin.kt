@@ -30,9 +30,11 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
             }
 
             dependencies {
+                add("androidTestImplementation", libs.findLibrary("androidx-runner").get())
+                add("androidTestImplementation", libs.findLibrary("androidx-test-rules").get())
+
                 add("androidTestImplementation", kotlin("test"))
                 add("testImplementation", kotlin("test"))
-
                 add(
                     "androidTestImplementation",
                     libs.findLibrary("androidx.test.espresso.core").get(),
