@@ -18,7 +18,7 @@ android {
 dependencies {
     api(projects.core.datastoreProto)
     api(projects.core.model)
-    implementation(projects.core.dispatchers)
+    implementation(libs.hiltcoroutines)
 
     api(libs.androidx.dataStore)
 
