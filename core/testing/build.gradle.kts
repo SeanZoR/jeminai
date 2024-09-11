@@ -9,7 +9,7 @@ android {
 
 dependencies {
     api(libs.kotlinx.coroutines.test)
-    api(libs.hiltcoroutines)
+    api(libs.hilt.coroutines)
     api(projects.core.data)
     api(projects.core.model)
 
